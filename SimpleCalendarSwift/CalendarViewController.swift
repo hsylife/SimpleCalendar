@@ -36,6 +36,12 @@ class CalendarViewController: UICollectionViewController, UICollectionViewDelega
         }
     }
     
+    //MARK - LifeCycle methods
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        selectedDate = NSDate()
+    }
+    
     //MARK: - private moethods
     /// Return First date of the month
     private func firstDateOfMonth()->NSDate?{
